@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use('/organization', orgRoute);
 
-const server = app.listen(process.env.PORT, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
     console.log("App listening at: ", process.env.PORT)
 });
 
