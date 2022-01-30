@@ -1,0 +1,19 @@
+{
+  "name": "viveo_health_test_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "siddharth.malik93@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "install": "^0.13.0",
+    "npm": "^8.4.0",
+    "pg": "^8.7.1"
+  }
+}
