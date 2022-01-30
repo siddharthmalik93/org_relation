@@ -1,0 +1,78 @@
+{
+	"id": "76370413-d0e7-617a-d5f6-ba0ef75bf916",
+	"name": "org_relations",
+	"description": "",
+	"order": [
+		"dcda73ab-d120-dc2b-7509-972202ad3500",
+		"45fce118-029c-bd78-4d91-fa8f4e622e6d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1643563913320,
+	"owner": "7126514",
+	"public": false,
+	"requests": [
+		{
+			"id": "45fce118-029c-bd78-4d91-fa8f4e622e6d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/organization/Banana tree?page=0",
+			"queryParams": [
+				{
+					"key": "page",
+					"value": "0",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "76370413-d0e7-617a-d5f6-ba0ef75bf916",
+			"data": null,
+			"dataMode": "params",
+			"name": "get org relations",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1643564023809,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "dcda73ab-d120-dc2b-7509-972202ad3500",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/organization",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "76370413-d0e7-617a-d5f6-ba0ef75bf916",
+			"data": [],
+			"dataMode": "raw",
+			"name": " create org relations",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1643563983616,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": " {\n        \"org_name\": \"Paradise Island\",\n        \"daughters\": [{\n            \"org_name\": \"Banana tree\",\n            \"daughters\": [{\n                \"org_name\": \"Yellow Banana\"\n            }, {\n                \"org_name\": \"Brown Banana\"\n            }, {\n                \"org_name\": \"Black Banana\"\n            }]\n        }, {\n            \"org_name\": \"Big banana tree\",\n            \"daughters\": [{\n                \"org_name\": \"Yellow Banana\"\n            }, {\n                \"org_name\": \"Brown Banana\"\n            }, {\n                \"org_name\": \"Green Banana\"\n            }, {\n                \"org_name\": \"Black Banana\",\n                \"daughters\": [{\n                    \"org_name\": \"Phoneutria Spider\"\n                }]\n            }]\n        }]\n    }"
+		}
+	]
+}
