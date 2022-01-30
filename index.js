@@ -1,16 +1,12 @@
 require('dotenv').config();
 
 const express = require('express');
-// const bodyParser = require('body-parser');
 
 const orgRoute = require('./app/routes/organization.routes');
 const { init_tables, pool } = require('./config/pgsql');
 
 const app = express();
 app.use(express.json());
-
-// app.use(bodyParser.urlencoded({ limit: '500mb', extended: true }));
-// app.use(bodyParser.json({ limit: '5mb' }));
 
 app.use('/organization', orgRoute);
 
